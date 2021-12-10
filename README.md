@@ -1,24 +1,17 @@
-# README
+This is the second excercise of Ruby on Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project I created simples models as User, Post, Comment.
 
-Things you may want to cover:
+There is a one to many relationship between User and (Post and Comment) and
+one to many relationship between Post and Comment.
 
-* Ruby version
+Run "rails console" on root.
 
-* System dependencies
+User has 3 attributes: username, password, email.
+User.new(username:string, password:string, email:string,)
 
-* Configuration
+Post has 3 attributes:
+Post.new(user_id:integer, title:string, body:text,)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Comment has 3 attributes:
+Comment.new(user_id:integer, post_id:string, body:text,)
