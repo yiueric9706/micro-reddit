@@ -8,10 +8,13 @@ one to many relationship between Post and Comment.
 Run "rails console" on root.
 
 User has 3 attributes: username, password, email.
+
 User.new(username:string, password:string, email:string,)
 
 Post has 3 attributes:
+
 Post.new(user_id:integer, title:string, body:text,)
 
 Comment has 3 attributes:
+
 Comment.new(user_id:integer, post_id:string, body:text,)
